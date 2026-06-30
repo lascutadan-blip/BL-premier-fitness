@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Premier Fitness Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="login">
+  <h1>Premier Fitness</h1>
+  <p>Admin Login</p>
+
+  <input id="email" placeholder="Email">
+  <input id="password" type="password" placeholder="Parolă">
+
+  <button onclick="login()">Login</button>
+  <p id="msg"></p>
+</div>
+
+<div id="app" style="display:none;">
+  <header>
+    <h2>Dashboard</h2>
+    <button onclick="logout()">Logout</button>
+  </header>
+
+  <div class="box">
+    <h3>Adaugă membru</h3>
+    <input id="name" placeholder="Nume">
+    <input id="phone" placeholder="Telefon">
+    <input id="start" type="date">
+    <input id="end" type="date">
+    <button onclick="addMember()">Adaugă</button>
+  </div>
+
+  <div class="box">
+    <h3>Membri</h3>
+    <div id="list"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
